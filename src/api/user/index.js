@@ -24,3 +24,11 @@ export const userInfo = () => {
     method: 'get'
   })
 }
+
+// 退出
+export const loginOut = () => {
+  return request({
+    url: '/main/loginOut.jhtml',
+    method: 'get'
+  })
+}

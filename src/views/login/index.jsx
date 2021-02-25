@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import md5 from 'md5'
 import { Form, Input, Button, message } from 'antd';
-import { Redirect } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { UserOutlined, LockOutlined } from '@ant-design/icons'
 import { connect } from 'react-redux'
 import { login, caseList, userInfo } from '@/api/user'
@@ -74,4 +74,4 @@ class Login extends Component {
     );
   }
 }
-export default connect(state => { return {...state.user}}, {setUserInfo})(Login);
+export default connect(state => { return {...state.user}}, {setUserInfo})(withRouter(Login));

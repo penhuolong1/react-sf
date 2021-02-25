@@ -1,0 +1,1 @@
+export const whiteList = ['/login'] // 白名单
