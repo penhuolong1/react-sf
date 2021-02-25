@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { message, Spin} from 'antd'
 import { isUnderfined, isNull} from '@/utils/tools.js'
 
-const API_STATE_ERR = 0
+const API_STATE_ERR = 101
 const service = axios.create({
   baseURL: '/api',
   timeout: 5000

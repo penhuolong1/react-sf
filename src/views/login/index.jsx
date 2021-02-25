@@ -36,12 +36,15 @@ class Login extends Component {
     })
   }
   render() {
-    console.log(this.props)
+    const obj = {
+      username: '厦门市诉非联动中心',
+      password: 'sfld2020'
+    }
     return (
       <div className="login-wrapper">
         <div className="content">
           <h2>用户登陆</h2>
-          <Form layout="inline" onFinish={this.loginSubmit}>
+          <Form layout="inline" initialValues={obj} onFinish={this.loginSubmit}>
             <Form.Item
               name="username"
               rules={[{ required: true, message: '请输入用户名!' }]}

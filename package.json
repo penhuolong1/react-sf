@@ -12,9 +12,9 @@
     "customize-cra": "^1.0.0",
     "md5": "^2.3.0",
     "mockjs": "^1.1.0",
-    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-loadable": "^5.5.0",
     "react-redux": "^7.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
@@ -23,6 +23,7 @@
     "redux-thunk": "^2.3.0",
     "sass-loader": "^11.0.1",
     "sass-resources-loader": "^2.1.1",
+    "user-agent": "^1.0.4",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
